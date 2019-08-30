@@ -1,8 +1,14 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React from "react";
+import { render } from "react-dom";
+import SearchParams from "./components/SearchParams";
 
-export default function App () {
-  return <h1>I'm a sexy app.</h1>
-}
+const App = () => {
+  return (
+    <>
+      <h1>Pet society</h1>
+      <SearchParams />
+    </>
+  );
+};
 
-render(<App />, document.getElementById('root'))
+render(<App />, document.getElementById("root"));
